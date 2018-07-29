@@ -1,0 +1,17 @@
+
+<h2>Employee List</h2>
+    
+        <div class="tablescroll">
+        <table class="table table-hover">
+
+            <tr *ngFor="let emp of empList">
+
+                <td>{{emp.id}}</td>
+                <td>{{emp.name | uppercase}}</td>
+                <td>{{emp.sal}}</td>
+                <td>{{emp.doj | date : "MMM-dd-yyyy"}}</td>
+
+            </tr>
+        </table>
+        </div>
+        <button class="btn btn-danger">Add Employee</button>
